@@ -2,163 +2,457 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Pailio Buddha – Best Restaurant in Ahmedabad | Fine Dining</title>
-  <meta name="description" content="Pailio Buddha is one of the best restaurants in Ahmedabad, offering a premium fine-dining experience, elegant ambience, and curated cuisine." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <meta name="keywords" content="Best restaurant in Ahmedabad, Fine dining Ahmedabad, Pailio Buddha" />
-
-  <!-- Google -->
-  <meta name="robots" content="index, follow" />
-
-  <!-- Schema -->
+  <title>Papilio Buddha - Best South Indian & Kerala Restaurant in Ahmedabad | Thaltej ⭐4.4/5</title>
+  <meta name="description" content="★ Top Rated ★ Papilio Buddha - #1 authentic South Indian & Kerala restaurant in Ahmedabad. Famous for Malabar Biryani, seafood, appam. 415+ 5-star reviews! Order online | Thaltej" />
+  <meta name="keywords" content="best restaurant in Ahmedabad, best South Indian restaurant Ahmedabad, best Kerala food Ahmedabad, best biryani Ahmedabad, Malabar restaurant, seafood Ahmedabad, Papilio Buddha, appam stew, fish curry, coastal cuisine, Thaltej restaurant, top rated restaurant Gujarat" />
+  
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
-    "name": "Pailio Buddha",
+    "name": "Papilio Buddha - Best South Indian Restaurant in Ahmedabad",
+    "description": "Ahmedabad's highest-rated authentic South Indian & Kerala restaurant. Famous for Malabar Biryani, seafood delicacies, and traditional coastal cuisine",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Ahmedabad",
+      "streetAddress": "Shop 06-07, First Floor, Times Square-1 Arcade, Thaltej Shilaj Road",
+      "addressLocality": "Thaltej, Ahmedabad",
+      "addressRegion": "Gujarat",
+      "postalCode": "380059",
       "addressCountry": "IN"
     },
-    "servesCuisine": ["Multi-cuisine", "Fine Dining"],
-    "priceRange": "₹₹₹",
-    "url": "https://YOURDOMAIN.com"
+    "geo": {"@type": "GeoCoordinates", "latitude": 23.049829679154694, "longitude": 72.49868057509268},
+    "telephone": "+91-9099030442",
+    "servesCuisine": ["South Indian", "Kerala", "Seafood", "Malabar", "Coastal Indian"],
+    "priceRange": "₹₹",
+    "openingHours": "Mo-Su 12:00-22:45",
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "415", "bestRating": "5"},
+    "hasMenu": "https://papiliobuddha.com/menu"
   }
   </script>
-
+  
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #fafafa;
-      color: #333;
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --primary: #c0392b; --gold: #f39c12; --dark: #1a1a1a;
+      --text: #2c3e50; --light: #f8f9fa;
     }
-    header {
-      background: #111;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #111;
-    }
-    footer {
-      background: #111;
-      color: white;
-      text-align: center;
-      padding: 20px;
+    body { font-family: 'Segoe UI', sans-serif; color: var(--text); line-height: 1.6; }
+    html { scroll-behavior: smooth; }
+    
+    /* Floating Action Buttons */
+    .float-btn { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px;
+      background: #25d366; color: white; border-radius: 50%; font-size: 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3); z-index: 999; display: flex;
+      align-items: center; justify-content: center; cursor: pointer;
+      transition: all 0.3s; animation: pulse 2s infinite; text-decoration: none; }
+    .float-btn:hover { transform: scale(1.1); }
+    @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+    .call-float { right: 100px; background: var(--primary); }
+    
+    /* Header */
+    header { position: fixed; top: 0; width: 100%; background: rgba(26,26,26,0.98);
+      backdrop-filter: blur(10px); z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.2); }
+    nav { max-width: 1400px; margin: 0 auto; padding: 1rem 2rem; display: flex;
+      justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.8rem; font-weight: bold; color: var(--gold);
+      text-decoration: none; display: flex; align-items: center; gap: 0.5rem; }
+    .nav-links { display: flex; gap: 2.5rem; list-style: none; }
+    .nav-links a { color: white; text-decoration: none; font-weight: 500;
+      transition: color 0.3s; position: relative; }
+    .nav-links a:hover { color: var(--gold); }
+    .order-btn { background: var(--primary); color: white; padding: 0.8rem 1.5rem;
+      border-radius: 25px; text-decoration: none; font-weight: bold;
+      transition: all 0.3s; display: flex; align-items: center; gap: 0.5rem; }
+    .order-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 20px rgba(192,57,43,0.4); }
+    
+    /* Hero */
+    .hero { margin-top: 70px; height: 100vh; background:
+      linear-gradient(135deg, rgba(192,57,43,0.9), rgba(26,26,26,0.85)),
+      url('https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=1600') center/cover fixed;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+      color: white; position: relative; }
+    .hero-content { max-width: 900px; padding: 2rem; animation: fadeIn 1s; z-index: 1; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); } }
+    .badges { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; flex-wrap: wrap; }
+    .badge { background: rgba(255,255,255,0.2); padding: 0.7rem 1.5rem;
+      border-radius: 30px; backdrop-filter: blur(10px); font-weight: 600;
+      animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+    .badge:nth-child(2) { animation-delay: 0.5s; }
+    .badge:nth-child(3) { animation-delay: 1s; }
+    .hero h1 { font-size: 4rem; margin-bottom: 1rem; text-shadow: 3px 3px 6px rgba(0,0,0,0.5); font-weight: 800; }
+    .tagline { font-size: 1.5rem; color: var(--gold); font-weight: 600; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2.5rem; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .cta-btns { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+    .btn { padding: 1.2rem 2.5rem; border-radius: 50px; text-decoration: none;
+      font-weight: bold; transition: all 0.4s; display: inline-flex;
+      align-items: center; gap: 0.7rem; font-size: 1.1rem; }
+    .btn-primary { background: var(--gold); color: var(--dark); }
+    .btn-primary:hover { transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 15px 35px rgba(243,156,18,0.5); }
+    .btn-secondary { background: white; color: var(--primary); }
+    .btn-secondary:hover { background: transparent; color: white; transform: translateY(-5px); }
+    
+    /* Trust Bar */
+    .trust { background: white; padding: 2rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1); }
+    .trust-grid { max-width: 1200px; margin: 0 auto; display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center; }
+    .trust-number { font-size: 2.5rem; font-weight: bold; color: var(--primary); }
+    
+    /* Section Styles */
+    section { padding: 6rem 2rem; }
+    .container { max-width: 1300px; margin: 0 auto; }
+    .section-header { text-align: center; margin-bottom: 4rem; }
+    .section-tag { color: var(--primary); font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; font-size: 0.9rem; }
+    .section-title { font-size: 3rem; margin: 0.5rem 0 1rem; color: var(--dark); font-weight: 800; }
+    .section-subtitle { color: #666; font-size: 1.2rem; }
+    
+    /* About */
+    .about { background: linear-gradient(to bottom, #fff, #f8f9fa); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+    .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .gallery-item { border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transition: transform 0.3s; height: 250px; background: linear-gradient(135deg, #c0392b, #e74c3c);
+      display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .gallery-item:hover { transform: scale(1.05) rotate(2deg); }
+    .gallery-item:first-child { grid-row: span 2; height: auto; }
+    .about-text p { margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.8; }
+    .features { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; margin-top: 2rem; }
+    .feature { display: flex; align-items: center; gap: 1rem; padding: 1.5rem;
+      background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s; }
+    .feature:hover { transform: translateY(-5px); }
+    .feature-icon { font-size: 2rem; }
+    
+    /* Specialties */
+    .specialties { background: var(--dark); color: white; }
+    .dishes { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 4rem; }
+    .dish-card { background: rgba(255,255,255,0.05); border-radius: 20px; overflow: hidden;
+      backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);
+      transition: all 0.4s; cursor: pointer; }
+    .dish-card:hover { transform: translateY(-15px) scale(1.03);
+      box-shadow: 0 20px 50px rgba(0,0,0,0.5); border-color: var(--gold); }
+    .dish-img { width: 100%; height: 250px; background: linear-gradient(135deg, #c0392b, #e74c3c);
+      display: flex; align-items: center; justify-content: center; font-size: 5rem; }
+    .dish-content { padding: 2rem; }
+    .dish-card h3 { margin-bottom: 0.8rem; font-size: 1.5rem; color: var(--gold); }
+    .dish-card p { color: #ddd; line-height: 1.6; }
+    
+    /* Menu */
+    .menu { background: white; }
+    .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-top: 4rem; }
+    .menu-cat { background: linear-gradient(135deg, #f8f9fa, white); padding: 2.5rem;
+      border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: all 0.3s; border: 2px solid transparent; }
+    .menu-cat:hover { transform: translateY(-10px); border-color: var(--primary); }
+    .cat-icon { font-size: 3rem; margin-bottom: 1rem; }
+    .menu-cat h3 { color: var(--primary); margin-bottom: 1.5rem; font-size: 1.8rem; }
+    .menu-cat ul { list-style: none; }
+    .menu-cat li { padding: 0.8rem 0; border-bottom: 1px solid #eee;
+      font-weight: 500; display: flex; align-items: center; gap: 0.5rem; }
+    .menu-cat li::before { content: '🍴'; }
+    
+    /* Reviews */
+    .reviews { background: linear-gradient(135deg, #c0392b, #e74c3c); color: white; }
+    .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin-top: 4rem; }
+    .review { background: rgba(255,255,255,0.1); padding: 2.5rem; border-radius: 20px;
+      backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); transition: all 0.3s; }
+    .review:hover { transform: translateY(-10px); background: rgba(255,255,255,0.15); }
+    .stars { color: var(--gold); font-size: 1.5rem; margin-bottom: 1rem; }
+    .review-text { font-style: italic; margin-bottom: 1.5rem; line-height: 1.8; }
+    .reviewer { font-weight: bold; color: var(--gold); }
+    
+    /* Why Choose */
+    .why { background: var(--light); }
+    .reasons { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; margin-top: 4rem; }
+    .reason { text-align: center; padding: 2.5rem; background: white; border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1); transition: all 0.4s; }
+    .reason:hover { transform: translateY(-15px) rotate(3deg); }
+    .reason-icon { width: 80px; height: 80px; background: linear-gradient(135deg, var(--primary), #e74c3c);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.5rem; font-size: 2.5rem; }
+    
+    /* Location */
+    .location { background: white; }
+    .location-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; margin-top: 4rem; }
+    .contact-cards { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-card { display: flex; gap: 1.5rem; padding: 2rem; background: var(--light);
+      border-radius: 15px; box-shadow: 0 5px 20px rgba(0,0,0,0.1); transition: all 0.3s; }
+    .contact-card:hover { transform: translateX(10px); }
+    .contact-icon { width: 60px; height: 60px; background: linear-gradient(135deg, var(--primary), #e74c3c);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; color: white; flex-shrink: 0; }
+    .map { border-radius: 20px; overflow: hidden; box-shadow: 0 10px 40px rgba(0,0,0,0.15); height: 500px; }
+    .map iframe { width: 100%; height: 100%; border: 0; }
+    
+    /* Footer */
+    footer { background: var(--dark); color: white; padding: 4rem 2rem 2rem; }
+    .footer-grid { max-width: 1300px; margin: 0 auto; display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer h3 { color: var(--gold); margin-bottom: 1rem; }
+    .footer ul { list-style: none; }
+    .footer li { margin-bottom: 0.5rem; }
+    .footer a { color: #aaa; text-decoration: none; transition: color 0.3s; }
+    .footer a:hover { color: var(--gold); }
+    .social { display: flex; gap: 1rem; }
+    .social a { width: 45px; height: 45px; background: rgba(255,255,255,0.1);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      transition: all 0.3s; }
+    .social a:hover { background: var(--gold); transform: translateY(-3px); }
+    .footer-bottom { text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1);
+      color: #999; }
+    
+    /* Responsive */
+    @media (max-width: 968px) {
+      .nav-links { display: none; }
+      .hero h1 { font-size: 2.5rem; }
+      .about-grid, .location-grid, .footer-grid { grid-template-columns: 1fr; }
+      .features { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr; }
+      .gallery-item:first-child { grid-row: span 1; }
     }
   </style>
 </head>
-
 <body>
 
-<header>
-  <h1>Pailio Buddha</h1>
-  <p>One of the Best Restaurants in Ahmedabad</p>
-</header>
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919099030442" class="float-btn" target="_blank">💬</a>
+  <a href="tel:+919099030442" class="float-btn call-float">📞</a>
 
-<section>
-  <h2>Pailio Buddha – One of the Best Restaurants in Ahmedabad</h2>
-  <p>
-    Pailio Buddha is a premium fine-dining restaurant in Ahmedabad, known for its
-    elegant ambience, exceptional hospitality, and carefully curated cuisine.
-    Guests consistently rate Pailio Buddha among the best restaurants in Ahmedabad
-    for family dining, celebrations, and business dinners.
-  </p>
-</section>
-<section>
-  <h2>Our Menu</h2>
-  <p>
-    Our menu features a thoughtfully curated selection of vegetarian and
-    multi-cuisine dishes, prepared using premium ingredients and modern culinary
-    techniques.
-  </p>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#" class="logo">🦋 Papilio Buddha</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#specialties">Specialties</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#location">Location</a></li>
+      </ul>
+      <a href="tel:+919099030442" class="order-btn">📞 Call Now</a>
+    </nav>
+  </header>
 
-  <ul>
-    <li>Starters & Appetizers</li>
-    <li>Main Course Specialties</li>
-    <li>Chef’s Signature Dishes</li>
-    <li>Desserts</li>
-    <li>Beverages</li>
-  </ul>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badges">
+        <div class="badge">⭐ 4.4/5 Rating</div>
+        <div class="badge">📍 Thaltej, Ahmedabad</div>
+        <div class="badge">🎖️ 415+ Reviews</div>
+      </div>
+      <h1>Authentic Kerala & South Indian Cuisine</h1>
+      <p class="tagline">Ahmedabad's Most Loved Coastal Restaurant</p>
+      <p>Experience the rich flavors of Malabar biryanis, fresh seafood, and traditional Kerala delicacies in an elegant ambiance</p>
+      <div class="cta-btns">
+        <a href="#menu" class="btn btn-primary">🍽️ View Menu</a>
+        <a href="tel:+919099030442" class="btn btn-secondary">📞 Reserve Table</a>
+      </div>
+    </div>
+  </section>
 
-  <p>
-    For the complete menu, please visit us or contact us directly.
-  </p>
-</section>
-
-
-<section>
-  <h2>Why We’re Among the Best Restaurants in Ahmedabad</h2>
-  <ul>
-    <li>Premium fine-dining experience</li>
-    <li>Elegant ambience and curated interiors</li>
-    <li>Highly rated by guests across platforms</li>
-    <li>Ideal for celebrations, business dinners, and special occasions</li>
-  </ul>
-</section>
-
-<section>
-  <h2>Visit Pailio Buddha – Best Restaurant in Ahmedabad</h2>
-
-  <p>
-    📍 <strong>Address:</strong>  
-    Ahmedabad, Gujarat, India
-  </p>
-
-  <p>
-    📞 <strong>Phone:</strong> +91-9099030442
-  </p>
-
-  <p>
-    ⏰ <strong>Opening Hours:</strong>  
-    12:00 PM – 10:45 PM (All Days)
-  </p>
-
-  <div style="margin-top: 20px;">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.289936511947!2d72.49868057509268!3d23.049829679154694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9bfbbcd4fc6d%3A0x9d35b27fea24e793!2sPapilio%20Buddha!5e0!3m2!1sen!2sin!4v1766394792724!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-  width="100%"
-  height="350"
-  style="border:0;"
-  allowfullscreen=""
-  loading="lazy"
-  referrerpolicy="no-referrer-when-downgrade">
-</iframe>
-
-
+  <!-- Trust Bar -->
+  <div class="trust">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <span class="trust-number">415+</span>
+        <div class="trust-label">Happy Customers</div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">4.4★</span>
+        <div class="trust-label">Average Rating</div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">50+</span>
+        <div class="trust-label">Menu Items</div>
+      </div>
+      <div class="trust-item">
+        <span class="trust-number">100%</span>
+        <div class="trust-label">Authentic Recipes</div>
+      </div>
+    </div>
   </div>
-</section>
 
-  <section>
-  <h2>Frequently Asked Questions</h2>
+  <!-- About -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title">Best South Indian Restaurant in Ahmedabad</h2>
+        <p class="section-subtitle">Bringing the authentic taste of Kerala's coastal cuisine to Gujarat</p>
+      </div>
+      <div class="about-grid">
+        <div class="gallery">
+          <div class="gallery-item">🍛</div>
+          <div class="gallery-item">🍤</div>
+          <div class="gallery-item">🥘</div>
+        </div>
+        <div class="about-text">
+          <p>Welcome to Papilio Buddha, Ahmedabad's premier destination for authentic South Indian and Kerala cuisine. Located in the heart of Thaltej, we've been serving the finest Malabar biryanis, fresh seafood, and traditional coastal delicacies since our establishment.</p>
+          <p>Our expert chefs bring decades of experience, using traditional cooking methods and the freshest ingredients to create dishes that transport you to the beautiful coasts of Kerala. Every meal is a celebration of authentic flavors, aromatic spices, and culinary heritage.</p>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">🌴</div>
+              <span>Authentic Kerala Recipes</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🍤</div>
+              <span>Fresh Seafood Daily</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">👨‍🍳</div>
+              <span>Expert Chefs</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">⭐</div>
+              <span>Top Rated in Ahmedabad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>Is Pailio Buddha one of the best restaurants in Ahmedabad?</h3>
-  <p>
-    Yes, Pailio Buddha is widely regarded as one of the best restaurants in Ahmedabad,
-    appreciated for its fine-dining experience, ambience, and quality of food.
-  </p>
+  <!-- Specialties -->
+  <section id="specialties" class="specialties">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--gold);">Signature Dishes</span>
+        <h2 class="section-title" style="color: white;">Our Famous Specialties</h2>
+        <p class="section-subtitle" style="color: #ddd;">The finest South Indian & Kerala dishes in Ahmedabad</p>
+      </div>
+      <div class="dishes">
+        <div class="dish-card">
+          <div class="dish-img">🍛</div>
+          <div class="dish-content">
+            <h3>Malabar Biryani</h3>
+            <p>Our signature dish! Aromatic rice layered with tender chicken, slow-cooked with authentic Malabar spices. The most loved biryani in Ahmedabad.</p>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-img">🍤</div>
+          <div class="dish-content">
+            <h3>Malabar Prawn Curry</h3>
+            <p>Fresh prawns in rich coconut gravy with traditional coastal spices. A Kerala coastal delicacy.</p>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-img">🥞</div>
+          <div class="dish-content">
+            <h3>Kerala Parotta</h3>
+            <p>Flaky, layered flatbreads - crispy outside, soft inside. Perfect with any curry.</p>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-img">🥘</div>
+          <div class="dish-content">
+            <h3>Appam with Stew</h3>
+            <p>Soft rice hoppers paired with aromatic coconut milk vegetable stew.</p>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-img">🔥</div>
+          <div class="dish-content">
+            <h3>Chicken 65</h3>
+            <p>Crispy, spicy fried chicken - the ultimate South Indian appetizer.</p>
+          </div>
+        </div>
+        <div class="dish-card">
+          <div class="dish-img">🐟</div>
+          <div class="dish-content">
+            <h3>Fish Moilee</h3>
+            <p>Delicate fish in mildly spiced coconut milk - a Kerala classic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <h3>What type of dining experience does Pailio Buddha offer?</h3>
-  <p>
-    Pailio Buddha offers a premium fine-dining experience suitable for families,
-    couples, corporate meetings, and special occasions.
-  </p>
-</section>
+  <!-- Menu -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Full Menu</span>
+        <h2 class="section-title">Explore Our Complete Menu</h2>
+        <p class="section-subtitle">From starters to desserts, every dish is a masterpiece</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-cat">
+          <div class="cat-icon">🥗</div>
+          <h3>Starters & Appetizers</h3>
+          <ul>
+            <li>Prawn 65</li>
+            <li>Chicken 65</li>
+            <li>Kerala Veg Cutlet</li>
+            <li>Chicken Cutlet</li>
+            <li>Ulli Vada</li>
+            <li>Coastal Prawn Crunch</li>
+            <li>Mushroom Pepper Fry</li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <div class="cat-icon">🍛</div>
+          <h3>Biryanis & Rice</h3>
+          <ul>
+            <li>Chicken Biryani (Signature)</li>
+            <li>Prawn Biryani</li>
+            <li>Mutton Biryani</li>
+            <li>Ghee Rice</li>
+            <li>Jeera Rice</li>
+            <li>Steamed Rice</li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <div class="cat-icon">🍲</div>
+          <h3>Kerala Curries</h3>
+          <ul>
+            <li>Malabar Prawn Curry</li>
+            <li>Fish Moilee</li>
+            <li>Kadala Curry</li>
+            <li>Paneer Curry</li>
+            <li>Mushroom Pepper Curry</li>
+            <li>Mutta Roast</li>
+            <li>Mixed Veg Stew</li>
+          </ul>
+        </div>
+        <div class="menu-cat">
+          <div class="cat-icon">🥞</div>
+          <h3>Breads & Sides</h3>
+          <ul>
+            <li>Kerala Parotta (Must Try)</li>
+            <li>Appam</li>
+            <li>Puttu</li>
+            <li>Idiyappam</li>
+            <li>Dosa</li>
+            <li>Idli</li>
+          </ul>
+        </div>
+      </div>
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="tel:+919099030442" class="btn btn-primary">📞 Call for Full Menu & Prices</a>
+      </div>
+    </div>
+  </section>
 
-
-
-<footer>
-  <p>© 2024 Pailio Buddha | Best Restaurant in Ahmedabad</p>
-</footer>
-
-</body>
-</html>
+  <!-- Reviews -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" style="color: var(--gold);">Testimonials</span>
+        <h2 class="section-title" style="color: white;">What Our Customers Say</h2>
+        <p class="section-subtitle" style="color: #ddd;">Rated 4.4/5 by 415+ happy customers</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Best South Indian food in Ahmedabad! The Malabar biryani is absolutely incredible. Authentic Kerala taste that reminds me of home. Must visit!"</p>
+          <div class="reviewer">Rajesh Kumar</div>
+          <div class="review-platform">Justdial</div>
+        </div>
+        <div class="review">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text">"Amazing seafood! The prawn curry is to die for
